@@ -26,7 +26,7 @@ Assuming that you already have Python 3.x installed along with PIP, the repo sim
 
 To get going run the following commands:
 ```commandline
-git clone 
+git clone https://github.com/kasp0r/sheepish_prompt.git
 cd sheepish_prompt
 sh setup.sh
 # this may take some time to clone the model to the local directory
