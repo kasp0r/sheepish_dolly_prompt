@@ -33,6 +33,37 @@ sh setup.sh
 python run_prompt.py
 ```
 
+Usage of the prompt:
+```commandline
+usage: run_prompt.py [-h] [--dolly_model DOLLY_MODEL]
+
+Simple script to produce commandline prompt for Dolly models.
+
+options:
+  -h, --help            show this help message and exit
+  --dolly_model DOLLY_MODEL, -m DOLLY_MODEL
+                        Turn off or on the initialisation test executed before
+                        monitoring. This test will check both the Blinkstick
+                        and the Elasticsearch connection.
+
+Process finished with exit code 0
+```
+
+Example execution:
+```commandline
+python run_prompt.py
+2023-04-19 22:12:34,810 [INFO] Path to Model looks to exist: sheepish_dolly_prompt/dolly-v2-3b
+2023-04-19 22:12:34,811 [INFO] Model Path used: /sheepish_dolly_prompt/dolly-v2-3b
+2023-04-19 22:12:34,811 [INFO] One moment. Loading model
+2023-04-19 22:12:55,922 [INFO] Prompt is ready... (CTRL-C to exit)
+> Is a Llama a kind of sheep?
+2023-04-19 22:13:52,404 [INFO] Response: No. A llama is a type of animal from the family Llamas.
+> Is there no similarity between a llama and a sheep?
+2023-04-19 22:14:45,210 [INFO] Response: The key difference between a llama and a sheep is that a sheep is a type of mammal, while a llama is a type of animal. While all mammals have features in common, there are also differences. A sheep has a maternal function, giving milk to her young. A llama does not have a maternal function, instead lactating is a feature of non-mammalian species.
+> where do llamas come from?
+2023-04-19 22:15:09,765 [INFO] Response: LLamas are a breed of domestic sheep from South America. They are often confused with the related camelus (the traditional wild ancestor of llamas) but are not closely related to camels.
+```
+
 Happy coding.
 
 #### License
