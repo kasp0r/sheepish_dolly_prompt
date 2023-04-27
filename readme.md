@@ -42,11 +42,7 @@ Simple script to produce commandline prompt for Dolly models.
 options:
   -h, --help            show this help message and exit
   --dolly_model DOLLY_MODEL, -m DOLLY_MODEL
-                        Turn off or on the initialisation test executed before
-                        monitoring. This test will check both the Blinkstick
-                        and the Elasticsearch connection.
-
-Process finished with exit code 0
+                        Select the dolly model to use with the prompt
 ```
 
 Example execution:

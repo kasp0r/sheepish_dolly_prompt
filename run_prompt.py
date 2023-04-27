@@ -85,6 +85,6 @@ if __name__ == '__main__':
                         required=False,
                         default='dolly-v2-3b',
                         #choices=['dolly-v2-3b','dolly-v2-7b','dolly-v2-12b'],
-                        help='Turn off or on the initialisation test executed before monitoring. This test will check both the Blinkstick and the Elasticsearch connection.')
+                        help='Select the dolly model to use with the prompt')
     args = parser.parse_args()
     run_program(arguments=args)
